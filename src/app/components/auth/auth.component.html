@@ -1,0 +1,20 @@
+<div class="container">
+    <h2>Login</h2>
+    <!-- 1. Enlazamos el FormGroup y el evento submit -->
+    <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
+        <div class="grupo">
+            <label for="username">Username</label>
+            <!-- 2. Asignamos el formControlName -->
+            <input type="text" id="username" formControlName="username" placeholder="Escriba su username">
+        </div>
+        <div class="grupo">
+            <label for="password">Password</label>
+            <!-- Cambié type a password por seguridad y asignamos formControlName -->
+            <input type="password" id="password" formControlName="password" placeholder="Escriba su password">
+        </div>
+        <button type="submit">Ingresar</button>
+    </form>
+    
+    <!-- Opcional para mostrar errores -->
+    <p *ngIf="errorMessage" style="color: #ff5252; margin-top: 15px; text-align: center;">{{ errorMessage }}</p>
+</div>

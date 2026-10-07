@@ -1,0 +1,47 @@
+{
+  "users": [
+    { "id": 1, "username": "admin", "password": "admin123", "name": "Laura Gómez", "role": "admin" },
+    { "id": 2, "username": "ana", "password": "1234", "name": "Ana Pérez", "role": "user" },
+    { "id": 3, "username": "juan", "password": "1234", "name": "Juan Doe", "role": "user" },
+    { "id": 4, "username": "maria", "password": "1234", "name": "María López", "role": "user" }
+  ],
+  "books": [
+    { "id": 1, "title": "Cien años de soledad", "year": 1967, "authorId": 1, "genreId": 1, "price": 18500, "stock": 12, "available": true },
+    { "id": 2, "title": "Ficciones", "year": 1944, "authorId": 2, "genreId": 2, "price": 14200, "stock": 8, "available": true },
+    { "id": 3, "title": "Rayuela", "year": 1963, "authorId": 3, "genreId": 1, "price": 16900, "stock": 0, "available": false },
+    { "id": 4, "title": "1984", "year": 1949, "authorId": 4, "genreId": 3, "price": 13800, "stock": 20, "available": true },
+    { "id": 5, "title": "Rebelión en la granja", "year": 1945, "authorId": 4, "genreId": 5, "price": 9900, "stock": 15, "available": true },
+    { "id": 6, "title": "El Aleph", "year": 1949, "authorId": 2, "genreId": 2, "price": 13500, "stock": 5, "available": true },
+    { "id": 7, "title": "Crónica de una muerte anunciada", "year": 1981, "authorId": 1, "genreId": 1, "price": 11200, "stock": 9, "available": true },
+    { "id": 8, "title": "Fahrenheit 451", "year": 1953, "authorId": 5, "genreId": 3, "price": 12700, "stock": 0, "available": false },
+    { "id": 9, "title": "Crónicas marcianas", "year": 1950, "authorId": 5, "genreId": 4, "price": 12300, "stock": 7, "available": true },
+    { "id": 10, "title": "El túnel", "year": 1948, "authorId": 6, "genreId": 1, "price": 10500, "stock": 11, "available": true }
+  ],
+  "authors": [
+    { "id": 1, "name": "Gabriel García Márquez", "nationality": "Colombia", "birthYear": 1927 },
+    { "id": 2, "name": "Jorge Luis Borges", "nationality": "Argentina", "birthYear": 1899 },
+    { "id": 3, "name": "Julio Cortázar", "nationality": "Argentina", "birthYear": 1914 },
+    { "id": 4, "name": "George Orwell", "nationality": "Reino Unido", "birthYear": 1903 },
+    { "id": 5, "name": "Ray Bradbury", "nationality": "Estados Unidos", "birthYear": 1920 },
+    { "id": 6, "name": "Ernesto Sabato", "nationality": "Argentina", "birthYear": 1911 }
+  ],
+  "genres": [
+    { "id": 1, "name": "Novela" },
+    { "id": 2, "name": "Cuentos" },
+    { "id": 3, "name": "Distopía" },
+    { "id": 4, "name": "Ciencia ficción" },
+    { "id": 5, "name": "Sátira" }
+  ],
+  "reviews": [
+    { "id": 1, "bookId": 1, "userId": 2, "username": "ana", "rating": 5, "comment": "Una saga familiar inolvidable.", "createdAt": "2026-08-02T14:30:00.000Z" },
+    { "id": 2, "bookId": 1, "userId": 3, "username": "juan", "rating": 4, "comment": "Hay que anotar el árbol genealógico, pero vale la pena.", "createdAt": "2026-08-10T19:05:00.000Z" },
+    { "id": 3, "bookId": 2, "userId": 4, "username": "maria", "rating": 5, "comment": "Cada cuento es un rompecabezas.", "createdAt": "2026-08-15T11:20:00.000Z" },
+    { "id": 4, "bookId": 3, "userId": 3, "username": "juan", "rating": 4, "comment": "Leerlo en el orden del tablero es otra experiencia.", "createdAt": "2026-08-21T22:45:00.000Z" },
+    { "id": 5, "bookId": 4, "userId": 2, "username": "ana", "rating": 5, "comment": "Más vigente que nunca.", "createdAt": "2026-08-28T09:10:00.000Z" },
+    { "id": 6, "bookId": 5, "userId": 4, "username": "maria", "rating": 4, "comment": "Corto, directo y muy filoso.", "createdAt": "2026-09-03T16:00:00.000Z" },
+    { "id": 7, "bookId": 6, "userId": 4, "username": "maria", "rating": 5, "comment": "El cuento que da título al libro es una joya.", "createdAt": "2026-09-07T13:35:00.000Z" },
+    { "id": 8, "bookId": 8, "userId": 2, "username": "ana", "rating": 4, "comment": "Una advertencia sobre lo que se pierde sin libros.", "createdAt": "2026-09-12T18:25:00.000Z" },
+    { "id": 9, "bookId": 9, "userId": 3, "username": "juan", "rating": 3, "comment": "Más poético que científico, pero muy disfrutable.", "createdAt": "2026-09-18T20:50:00.000Z" },
+    { "id": 10, "bookId": 10, "userId": 2, "username": "ana", "rating": 4, "comment": "Breve e intenso de principio a fin.", "createdAt": "2026-09-25T10:15:00.000Z" }
+  ]
+}

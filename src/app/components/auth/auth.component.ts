@@ -30,8 +30,9 @@ export class AuthComponent {
     }
 
     if(this.loginForm.valid){
-      const{username, password} = this.loginForm.value;
-
+      const username = this.loginForm.value.username;
+      const password = this.loginForm.value.password;
+      
       this.authService.login(username, password).subscribe({
         next: (users) => {
           if (users.length > 0) {
